@@ -3,13 +3,13 @@
     <div class="container">
       <h1>Aplikasi Penghitung Dzikir Online</h1>
       <div class="row mt-5">
-        <div class="col-md-4">
+        <div class="col-md-4 col-4">
           <button class="btn btn-dark" @click="decrease()">-</button>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-4">
           <span class="btn btn-outline-dark">{{ counter }}</span>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-4">
           <button class="btn btn-dark" @click="increase()">+</button>
         </div>
       </div>
