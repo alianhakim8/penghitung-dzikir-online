@@ -9,6 +9,7 @@
         <div class="col-md-4 col-4">
           <span class="btn btn-outline-dark">{{ counter }}</span>
         </div>
+
         <div class="col-md-4 col-4">
           <button class="btn btn-dark" @click="increase()">+</button>
         </div>
@@ -49,5 +50,28 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+h1 {
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+body {
+  background-size: cover;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-image: url("https://images.unsplash.com/photo-1519834089823-08a494ba5a12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80");
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-repeat: no-repeat;
+    background-color: black;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1540866225557-9e4c58100c67?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=640&q=80");
+  }
+}
 </style>

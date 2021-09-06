@@ -5,7 +5,9 @@ import router from './router'
 import store from './store'
 
 Vue.config.productionTip = false
-
+Vue.config.keyCodes = {
+  "arrow-keys": [37, 38, 39, 40]
+};
 new Vue({
   router,
   store,
