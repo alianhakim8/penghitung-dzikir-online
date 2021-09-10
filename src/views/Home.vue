@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-    <div class="bg-image"></div>
     <div class="bg-text">
       <div class="container">
       <h1>Aplikasi Penghitung Dzikir Online</h1>
@@ -55,7 +54,7 @@ export default {
 
 <style>
 body, html{
-  height: 100%;
+  background: black;
   background-image: url("https://images.unsplash.com/photo-1519834089823-08a494ba5a12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80");
   background-repeat: no-repeat;
    /* Center and scale the image nicely */
@@ -66,19 +65,6 @@ body, html{
 
 * {
   box-sizing: border-box;
-}
-
-.bg-image{
-  background-image: url("https://images.unsplash.com/photo-1519834089823-08a494ba5a12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80");
-  /* Add the blur effect */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  /* Full height */
-  height: 100%;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /* Position text in the middle of the page/image */
