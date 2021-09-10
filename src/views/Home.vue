@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <div class="container">
+    <div class="bg-image"></div>
+    <div class="bg-text">
+      <div class="container">
       <h1>Aplikasi Penghitung Dzikir Online</h1>
       <div class="row mt-5">
         <div class="col-md-4 col-4">
@@ -18,6 +20,7 @@
         Ulangi dari 0
       </button>
       <!-- <p class="mt-4">alianhakim. 2021</p> -->
+    </div>
     </div>
   </div>
 </template>
@@ -51,19 +54,57 @@ export default {
 </script>
 
 <style>
+body, html{
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1519834089823-08a494ba5a12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80");
+  background-repeat: no-repeat;
+   /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image{
+  background-image: url("https://images.unsplash.com/photo-1519834089823-08a494ba5a12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80");
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(255, 255, 255, 1); /* Black w/opacity/see-through */
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
 h1 {
   background-color: black;
   color: white;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 10px;
-}
-
-body {
-  background-size: cover;
-  background-color: black;
-  background-repeat: no-repeat;
-  background-image: url("https://images.unsplash.com/photo-1519834089823-08a494ba5a12?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80");
 }
 
 @media only screen and (max-width: 600px) {
